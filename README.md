@@ -1,3 +1,2 @@
-# hilarylabs.github.io
 Hi
 
