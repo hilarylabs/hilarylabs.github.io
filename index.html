@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hilary Project Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f6fa;
+    }
+
+    .container {
+      display: flex;
+      width: 70%;
+      margin: 0 auto;
+      height: 100vh;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      background-color: white;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 50%;
+      background-color: #2f3640;
+      color: #f5f6fa;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .sidebar h2 {
+      font-size: 20px;
+      color: #00a8ff;
+      margin-top: 0;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #f5f6fa;
+      text-decoration: none;
+      padding: 8px 0;
+      margin: 4px 0;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #353b48;
+      padding-left: 10px;
+    }
+
+    /* Main content */
+    .content {
+      flex-grow: 1;
+      padding: 40px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .content-inner {
+      max-width: 90%;
+      width: 100%;
+    }
+
+    .content-inner h1 {
+      color: #2f3640;
+    }
+
+    .content-inner p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .disclaimer {
+      font-size: 14px;
+      color: #888;
+      margin-top: 30px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      .container {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+      }
+
+      .sidebar {
+        width: 100%;
+      }
+
+      .content {
+        padding: 20px;
+      }
+
+      .content-inner {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>📁 Projects</h2>
+      <a href="lab1.html">Project 1: VMware Lab Setup</a>
+      <a href="lab2.html">Project 2: Samba File Server</a>
+      <a href="lab3.html">Project 3: pfSense Firewall</a>
+      <a href="lab4.html">Project 4: Active Directory + DNS</a>
+      <a href="lab5.html">Project 5: File Sharing with ACL</a>
+      <hr>
+      <a href="about.html">👤 About Me</a>
+      <a href="contact.html">✉️ Contact</a>
+      <a href="cv.html">📄 My CV</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+      <div class="content-inner">
+        <h1>My Projects Portfolio</h1>
+        <p>
+          This is a documentation of all IT projects that I’ve completed or am currently building. There are also upcoming projects that might caught my interest.
+          I use this site to archive configurations, tools, diagrams, and concepts so that if I may need them again, I can easily refer — and of course to showcase the knowledge that I have gained and my skills.
+        </p>
+
+        <p>
+          Feel free to browse and reuse my work for your learning or inspiration. If you're using any of the content commercially,
+          I kindly ask for credit. I am not responsible for any issues caused by implementing these projects in live or offline environments. Use it on your own risk.
+        </p>
+
+        <div class="disclaimer">
+          ⚠️ Disclaimer: All content here is created for educational purposes in a lab environment and also for my personal use.
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
