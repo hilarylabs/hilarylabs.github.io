@@ -12,65 +12,71 @@
     }
 
     .container {
-      display: flex;
-      width: 70%;
-      margin: 0 auto;
-      height: 100vh;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      width: 100%;
+      min-height: 100vh;
       background-color: white;
     }
 
-    /* Sidebar */
-    .sidebar {
-      width: 50%;
-      background-color: #2f3640;
-      color: #f5f6fa;
-      padding: 20px;
-      box-sizing: border-box;
+    /* Top Navigation */
+    nav.topnav {
+      background-color: white;
     }
 
-    .sidebar h2 {
-      font-size: 20px;
-      color: #00a8ff;
-      margin-top: 0;
+    .topnav-container {
+      max-width: 800px;
+      margin: 0 auto;
+      align-items: center;
+      padding: 16px;
     }
 
-    .sidebar a {
-      display: block;
-      color: #f5f6fa;
+    .logo {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #2f3640;
       text-decoration: none;
-      padding: 8px 0;
-      margin: 4px 0;
-      transition: 0.3s;
     }
 
-    .sidebar a:hover {
-      background-color: #353b48;
-      padding-left: 10px;
+    .nav-links {
+      list-style: none;
+      display: flex;
+      margin-left: auto;
+      padding-left: 0;
+	  font-size: 18px;
+    }
+
+    .nav-links li {
+      margin-left: 24px;
+    }
+
+    .nav-links li a {
+      color: #2f3640;
+      text-decoration: underline;
+      padding: 8px 0;
+      font-weight: 500;
+      transition: opacity 0.2s;
+    }
+
+    .nav-links li a:hover {
+      opacity: 0.7;
     }
 
     /* Main content */
     .content {
-      flex-grow: 1;
-      padding: 40px;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
       box-sizing: border-box;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
     }
 
-    .content-inner {
-      max-width: 90%;
-      width: 100%;
-    }
-
-    .content-inner h1 {
+    .content h1 {
       color: #2f3640;
+      font-size: 28px;
     }
 
-    .content-inner p {
+    .content p {
       font-size: 16px;
       line-height: 1.6;
+      color: #333;
     }
 
     .disclaimer {
@@ -79,23 +85,26 @@
       margin-top: 30px;
     }
 
-    @media screen and (max-width: 1024px) {
-      .container {
+    /* Responsive */
+    @media screen and (max-width: 600px) {
+      .topnav-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
         flex-direction: column;
         width: 100%;
-        height: auto;
+        margin-top: 10px;
       }
 
-      .sidebar {
-        width: 100%;
+      .nav-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
       }
 
-      .content {
-        padding: 20px;
-      }
-
-      .content-inner {
-        max-width: 100%;
+      .nav-links li a {
+        padding-left: 0;
       }
     }
   </style>
@@ -103,37 +112,42 @@
 <body>
 
   <div class="container">
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <h2>📁 Projects</h2>
-      <a href="project1.html">Project 1: Jellyfin Server Stup</a>
-      <a href="lab2.html">Project 2: Samba File Server</a>
-      <a href="lab3.html">Project 3: pfSense Firewall</a>
-      <a href="lab4.html">Project 4: Active Directory + DNS</a>
-      <a href="lab5.html">Project 5: File Sharing with ACL</a>
-      <hr>
-      <a href="about.html">👤 About Me</a>
-      <a href="contact.html">✉️ Contact</a>
-      <a href="cv.html">📄 My CV</a>
-    </div>
+    <!-- Navigation -->
+    <nav class="topnav">
+      <div class="topnav-container">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
 
     <!-- Main Content -->
     <div class="content">
-      <div class="content-inner">
-        <h1>My Projects Portfolio</h1>
-        <p>
-          This is a documentation of all IT projects that I’ve completed or I am currently building. There are also upcoming projects that may have caught my interest.
-          I use this site to archive configurations, tools, diagrams, and concepts so that if I may need them again, I can easily refer them here, — and of course to showcase the knowledge that I have gained and my skills.
-        </p>
+      <h2>👋 Hi there, I'm Hilary Jebit.</h2>
+	  <p>I currently work as a customer service officer for an international home appliances brand. </p>
+	  
+	  <p>I was always interested in IT. I always wonder how we can access files over the internet, watching video on
+	  <a href="https://youtube.com">Youtube</a> or watching movies on <a href="https://netflix.com">Netflix</a>. </p>
+	  
+	  <p>I've started diving into building my own server when I found stumbled into a reddit community 
+	  <a href="https://www.reddit.com/r/selfhosted/">Selfhosted</a> and <a href="https://www.reddit.com/r/homelab/">Homelab</a>
+	  
+      <p>
+        This is a documentation of all IT projects that I’ve completed or I am currently building. There are also upcoming projects that may have caught my interest.
+        I use this site to archive configurations, tools, diagrams, and concepts so that if I may need them again, 
+		I can easily refer them here — and of course, to showcase the knowledge that I have gained and my skills.
+      </p>
 
-        <p>
-          Feel free to browse and reuse my work for your learning or inspiration. If you're using any of the content commercially,
-          I kindly ask for credit. I am not responsible for any issues caused by implementing these projects in live or offline environments. Use it on your own risk.
-        </p>
+      <p>
+        Feel free to browse and reuse my work for your learning or inspiration. If you're using any of the content commercially,
+        I kindly ask for credit. I am not responsible for any issues caused by implementing these projects in live or offline environments. Use at your own risk.
+      </p>
 
-        <div class="disclaimer">
-          ⚠️ Disclaimer: All content here is created for educational purposes in a lab environment and also for my personal use.
-        </div>
+      <div class="disclaimer">
+        ⚠️ Disclaimer: All content here is created for educational purposes in a lab environment and also for my personal use.
       </div>
     </div>
   </div>
