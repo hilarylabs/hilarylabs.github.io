@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hilary Project Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f6fa;
+    }
+
+    .container {
+      width: 100%;
+      min-height: 100vh;
+      background-color: white;
+    }
+
+    /* Top Navigation */
+    nav.topnav {
+      background-color: white;
+    }
+
+    .topnav-container {
+      max-width: 800px;
+      margin: 0 auto;
+      align-items: center;
+      padding: 16px;
+    }
+
+    .logo {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #2f3640;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      margin-left: auto;
+      padding-left: 0;
+	  font-size: 18px;
+    }
+
+    .nav-links li {
+      margin-left: 24px;
+    }
+
+    .nav-links li a {
+      color: #2f3640;
+      text-decoration: underline;
+      padding: 8px 0;
+      font-weight: 500;
+      transition: opacity 0.2s;
+    }
+
+    .nav-links li a:hover {
+      opacity: 0.7;
+    }
+
+    /* Main content */
+    .content {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+
+    .content h1 {
+      color: #2f3640;
+      font-size: 28px;
+    }
+
+    .content p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .disclaimer {
+      font-size: 14px;
+      color: #888;
+      margin-top: 30px;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 600px) {
+      .topnav-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .nav-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+      }
+
+      .nav-links li a {
+        padding-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Navigation -->
+    <nav class="topnav">
+      <div class="topnav-container">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+      <h2>👋 Hi there, I'm Hilary Jebit.</h2>
+	 <p>About me </p>
+	
+
+      <div class="disclaimer">
+        ⚠️ Disclaimer: All content here is created for educational purposes in a lab environment and also for my personal use.
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
