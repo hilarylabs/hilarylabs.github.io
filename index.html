@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hilary Project Portfolio</title>
+  <title>Hilary Jebit - Home</title>
   <style>
     body {
       margin: 0;
@@ -24,7 +24,7 @@
 
     .topnav-container {
       max-width: 800px;
-      margin: 0 auto;
+      margin: 50px auto;
       align-items: center;
       padding: 16px;
     }
@@ -38,26 +38,38 @@
 
     .nav-links {
       list-style: none;
-      display: flex;
-      margin-left: auto;
-      padding-left: 0;
-	  font-size: 18px;
-    }
-
-    .nav-links li {
-      margin-left: 24px;
-    }
-
-    .nav-links li a {
-      color: #2f3640;
-      text-decoration: underline;
-      padding: 8px 0;
+      padding: 0;
+      margin: 0;
+      display: inline-flex;
+      gap: 32px;
+      font-size: 19px;
       font-weight: 500;
-      transition: opacity 0.2s;
     }
 
-    .nav-links li a:hover {
-      opacity: 0.7;
+     .nav-links li a {
+      position: relative;
+      text-decoration: none;
+      color: #000;
+      padding-bottom: 2px;
+      transition: color 0.2s;
+    }
+
+      .nav-links li a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background-color: currentColor;
+      transform: scaleX(1);
+      transform-origin: right;
+      transition: transform 0.3s ease;
+    }
+
+    .nav-links li a:hover::after {
+      transform: scaleX(0);
+      transform-origin: left;
     }
 
     /* Main content */
@@ -133,22 +145,28 @@
 
     <!-- Main Content -->
     <div class="content">
-       <h2>👋 Hi there, I’m Hilary Jebit.</h2>
-       <p>I was born and raised in Kota Kinabalu, Sabah – famous with its nickname “land below the wind”. Sabah’s nickname stems from its location just south of the typhoon-prone region near the Philippines, making it effectively “below” the typhoons and thus protected from their devastating effects.</p>
-       <p><img src="image/Mount Kinabalu.jpg" width="708" height="409"></p>
-       <p>Before I found IT, I’m very much interested in reading and science. I read a lot of books from the book <em>The Notebook</em> by <em>Nicholas Sparks</em> to <em>A Brief History of Time: From the Big Bang to Black Holes</em> by <em>Stephen Hawking.</em></p>
-       <p>I always wonder how can we access files over the internet, watching video on <a href="https://youtube.com/">Youtube</a> or watching movies on <a href="https://netflix.com/">Netflix</a>. But I never acted on it.</p>
-       <p>I’ve started diving into IT, building my own home server when I found stumbled into a reddit community <a href="https://www.reddit.com/r/selfhosted/">Selfhosted</a> and <a href="https://www.reddit.com/r/homelab/">Homelab.</a></p>
-       <p>Now I’m very much invested in IT and got my first IT certificate, CompTIA Network+ certificate.</p>
-       <p>I will continue to learn and practice my skills and hopefully one day, I will make a career in IT.</p>
-       <p>This is a documentation of all IT projects that I’ve completed or I am currently building. There are also upcoming projects that may have caught my interest.</p>
-       <p>I use this site to archive configurations, tools, diagrams, and concepts so that if I may need them again, I can easily refer them here — and of course, to showcase the knowledge that I have gained and my skills.</p>
+       <h1>Hi there, I’m Hilary Jebit.</h1>
+	  <p> <img src="/image/me.jpg" width="708" height="409"></img> </p>
+       
+	   <p>CompTIA Network+ certified, I am currently building hands-on IT infrastructure experience through my home lab.</p>
+
+       <p>I work with Windows Server and Linux environments, gaining practical experience in system administration and server configuration.</p>
+
+       <p>I am actively working with Active Directory, Microsoft 365, and Debian Linux while preparing for the MS-102 and CCNA certifications.</p>
+
+       <p>With 10 years of experience in customer service at a multinational company, I bring strong communication skills and real-world business awareness into my transition into IT.</p>
+
+       <p>This site documents my technical labs, configurations, and projects as I build toward a career in networking and cloud infrastructure.</p>
+
+       <p>You can explore my current and upcoming work under Projects or follow my learning journey on the Blog.</p>
+	   
+	   
   
    </div>
-  
-
+  </div>
+</div>
 </body>
-	</div>
+	
 </html>
 
 
