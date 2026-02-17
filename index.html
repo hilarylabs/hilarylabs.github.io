@@ -120,12 +120,74 @@
       }
     }
 	  
-.resized-img {
-  width: 95%;
-  height: auto;
-  display: block;      /* make image a block element */
-  /*margin: 0 auto;      /* auto left/right margins center it */
-}
+    .resized-img {
+      width: 100%;
+      max-width: 708px;
+      height: auto;
+      display: block;      /* make image a block element */
+      *margin: 0 auto;      /* auto left/right margins center it */
+    }
+
+    .social-links {
+      margin-top: 15px;
+    }
+
+    .social-links a {
+      color: #374151;
+      transition: color 0.2s ease, transform 0.2s ease;
+    }
+
+    .social-links a:hover {
+      color: #0a66c2;   /* LinkedIn blue */
+      transform: translateY(-2px);
+    }
+
+   .site-footer {
+      margin-top: 30px;
+      padding: 20px 20px;
+      background-color: #f4f0e5;
+      border-top: 1px solid #e5e7eb;   /* subtle divider */
+    }
+
+   .footer-content {
+      max-width: 800px;
+      margin: 0 auto;
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    .footer-line {
+      width: 60px;
+      height: 2px;
+      background-color: #e5e7eb;
+      margin: 15px 0;   /* remove auto centering */
+    }
+
+    .footer-tagline {
+      font-style: italic;
+      font-size: 13px;
+    }
+
+    .footer-content a {
+      color: #6b7280;
+      text-decoration: none;
+    }
+
+    .footer-content a:hover {
+      color: #0a66c2;
+    }
+
+
+    .footer-meta a::before {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background-color: #9ca3af;
+      border-radius: 50%;
+      margin: 0 12px;
+      transform: translateY(-2px);
+    }
   </style>
 </head>
 <body>
@@ -145,8 +207,9 @@
 
     <!-- Main Content -->
     <div class="content">
-       <h1>Hi there, I’m Hilary Jebit.</h1>
-	  <p> <img src="/image/me.jpg" width="708" height="409"></img> </p>
+       <h1>I’m Hilary Jebit.</h1>
+       <p>A <strong>CompTIA Network+ Certified</strong> | IT Infrastructure & Systems Enthusiast</p>
+	   <p><img class="resized-img" src="/image/me.jpg"></p>
        
 	   <p>CompTIA Network+ certified, I am currently building hands-on IT infrastructure experience through my home lab.</p>
 
@@ -158,15 +221,22 @@
 
        <p>This site documents my technical labs, configurations, and projects as I build toward a career in networking and cloud infrastructure.</p>
 
-       <p>You can explore my current and upcoming work under Projects or follow my learning journey on the Blog.</p>
+       <p>You can explore my current and upcoming work under Projects or follow my learning journey on the <a href="blog.html">Blog</a>.</p>
 	   
 	   
   
    </div>
   </div>
-</div>
+
+  <footer class="site-footer">
+  <div class="footer-content">
+    <p class="footer-meta">
+    © 2026 Hilary Jebit <a href="https://www.linkedin.com/in/hilary-jebit-a8b5bbb7/" target="_blank">LinkedIn</a></p>
+    <p class="footer-tagline">Building infrastructure. Documenting the journey.</p>
+    </div>
+   </footer>
+
 </body>
-	
 </html>
 
 
