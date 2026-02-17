@@ -120,12 +120,74 @@
       }
     }
 	  
-.resized-img {
-  width: 95%;
-  height: auto;
-  display: block;      /* make image a block element */
-  /*margin: 0 auto;      /* auto left/right margins center it */
-}
+    .resized-img {
+      width: 100%;
+      max-width: 708px;
+      height: auto;
+      display: block;      /* make image a block element */
+      *margin: 0 auto;      /* auto left/right margins center it */
+    }
+
+    .social-links {
+      margin-top: 15px;
+    }
+
+    .social-links a {
+      color: #374151;
+      transition: color 0.2s ease, transform 0.2s ease;
+    }
+
+    .social-links a:hover {
+      color: #0a66c2;   /* LinkedIn blue */
+      transform: translateY(-2px);
+    }
+
+   .site-footer {
+      margin-top: 30px;
+      padding: 20px 20px;
+      background-color: #f4f0e5;
+      border-top: 1px solid #e5e7eb;   /* subtle divider */
+    }
+
+   .footer-content {
+      max-width: 800px;
+      margin: 0 auto;
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    .footer-line {
+      width: 60px;
+      height: 2px;
+      background-color: #e5e7eb;
+      margin: 15px 0;   /* remove auto centering */
+    }
+
+    .footer-tagline {
+      font-style: italic;
+      font-size: 13px;
+    }
+
+    .footer-content a {
+      color: #6b7280;
+      text-decoration: none;
+    }
+
+    .footer-content a:hover {
+      color: #0a66c2;
+    }
+
+
+    .footer-meta a::before {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background-color: #9ca3af;
+      border-radius: 50%;
+      margin: 0 12px;
+      transform: translateY(-2px);
+    }
   </style>
 </head>
 <body>
@@ -148,7 +210,7 @@
        <h2>👋 Hi there, I’m Hilary Jebit.</h2>
        <p>I was born and raised in Kota Kinabalu, Sabah – famous with its nickname “land below the wind”. Sabah’s nickname stems from its location just south of the typhoon-prone region near the Philippines, making it effectively “below” the typhoons and thus protected from their devastating effects.</p>
 	   
-       <p><img src="/image/Mount Kinabalu.jpg" width="708" height="409"></p>
+       <p><img class="resized-img" src="/image/Mount Kinabalu.jpg"></p>
 	   
 	   <p>I currently work at a multinational company as a customer service officer, where I handle technical support for smart home appliances. My responsibilities include troubleshooting devices, guiding customers through firmware upgrades, coordinating technical team visits, and clearly explaining technical findings to non-technical users. Over the years, this role has strengthened my communication skills and taught me how to translate complex issues into simple solutions.</p>
 	   
@@ -172,9 +234,15 @@
   
    </div>
   </div>
-</div>
+  <footer class="site-footer">
+  <div class="footer-content">
+    <p class="footer-meta">
+    © 2026 Hilary Jebit <a href="https://www.linkedin.com/in/hilary-jebit-a8b5bbb7/" target="_blank">LinkedIn</a></p>
+    <p class="footer-tagline">Building infrastructure. Documenting the journey.</p>
+    </div>
+   </footer>
+
 </body>
-	
 </html>
 
 
