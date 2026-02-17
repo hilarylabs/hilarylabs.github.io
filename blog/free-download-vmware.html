@@ -76,7 +76,7 @@
     .content {
       max-width: 800px;
       margin: 40px auto;
-      padding: 0 20px 30px 0;
+      padding: 0 20px 30px 20px;
       box-sizing: border-box;
     }
 
@@ -120,12 +120,74 @@
       }
     }
 	  
-.resized-img {
-  width: 95%;
-  height: auto;
-  display: block;      /* make image a block element */
-  /*margin: 0 auto;      /* auto left/right margins center it */
-}
+    .resized-img {
+      width: 100%;
+      max-width: 708px;
+      height: auto;
+      display: block;      /* make image a block element */
+      *margin: 0 auto;      /* auto left/right margins center it */
+    }
+
+    .social-links {
+      margin-top: 15px;
+    }
+
+    .social-links a {
+      color: #374151;
+      transition: color 0.2s ease, transform 0.2s ease;
+    }
+
+    .social-links a:hover {
+      color: #0a66c2;   /* LinkedIn blue */
+      transform: translateY(-2px);
+    }
+
+   .site-footer {
+      margin-top: 30px;
+      padding: 20px 20px;
+      background-color: #f4f0e5;
+      border-top: 1px solid #e5e7eb;   /* subtle divider */
+    }
+
+   .footer-content {
+      max-width: 800px;
+      margin: 0 auto;
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    .footer-line {
+      width: 60px;
+      height: 2px;
+      background-color: #e5e7eb;
+      margin: 15px 0;   /* remove auto centering */
+    }
+
+    .footer-tagline {
+      font-style: italic;
+      font-size: 13px;
+    }
+
+    .footer-content a {
+      color: #6b7280;
+      text-decoration: none;
+    }
+
+    .footer-content a:hover {
+      color: #0a66c2;
+    }
+
+
+    .footer-meta a::before {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background-color: #9ca3af;
+      border-radius: 50%;
+      margin: 0 12px;
+      transform: translateY(-2px);
+    }
   </style>
 </head>
 <body>
@@ -147,7 +209,7 @@
     <div class="content">
        <h3>How To Download Vmware For Free</h3>
 	   Author: <a href="/">hilarylab</a>, Written on: 16 February 2026 
-	  <p> <img src="/image/vmware.jpg" width="708" height="409"></img></p>
+	  <p> <img class="resized-img" src="/image/vmware.jpg"</p>
 	  
 	  <p>I have been using vmware extensively for my pratice in my home lab. Using Vmware is easy to spin up new virtual machine and install Operating system of your choosing. In this way, I only have one decently computer and I can basically run multiple other Operating system to practice and gain experience.</p>
 	  
@@ -174,9 +236,15 @@
   
    </div>
   </div>
-</div>
+  <footer class="site-footer">
+  <div class="footer-content">
+    <p class="footer-meta">
+    © 2026 Hilary Jebit <a href="https://www.linkedin.com/in/hilary-jebit-a8b5bbb7/" target="_blank">LinkedIn</a></p>
+    <p class="footer-tagline">Building infrastructure. Documenting the journey.</p>
+    </div>
+   </footer>
+
 </body>
-	
 </html>
 
 
