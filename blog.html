@@ -120,12 +120,112 @@
       }
     }
 	  
-.resized-img {
-  width: 95%;
-  height: auto;
-  display: block;      /* make image a block element */
-  /*margin: 0 auto;      /* auto left/right margins center it */
-}
+    .resized-img {
+      width: 100%;
+      max-width: 708px;
+      height: auto;
+      display: block;      /* make image a block element */
+      *margin: 0 auto;      /* auto left/right margins center it */
+    }
+
+    .social-links {
+      margin-top: 15px;
+    }
+
+    .social-links a {
+      color: #374151;
+      transition: color 0.2s ease, transform 0.2s ease;
+    }
+
+    .social-links a:hover {
+      color: #0a66c2;   /* LinkedIn blue */
+      transform: translateY(-2px);
+    }
+
+   .site-footer {
+      margin-top: 30px;
+      padding: 20px 20px;
+      background-color: #f4f0e5;
+      border-top: 1px solid #e5e7eb;   /* subtle divider */
+    }
+
+   .footer-content {
+      max-width: 800px;
+      margin: 0 auto;
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    .footer-line {
+      width: 60px;
+      height: 2px;
+      background-color: #e5e7eb;
+      margin: 15px 0;   /* remove auto centering */
+    }
+
+    .footer-tagline {
+      font-style: italic;
+      font-size: 13px;
+    }
+
+    .footer-content a {
+      color: #6b7280;
+      text-decoration: none;
+    }
+
+    .footer-content a:hover {
+      color: #0a66c2;
+    }
+
+
+    .footer-meta a::before {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background-color: #9ca3af;
+      border-radius: 50%;
+      margin: 0 12px;
+      transform: translateY(-2px);
+    }
+
+    .blog-item {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-top: 1px solid #e5e7eb;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .blog-item h2 {
+      margin: 0 0 8px 0;
+      font-size: 20px;
+    }
+
+    .blog-item h2 a {
+      text-decoration: none;
+      color: #353534;
+    }
+
+    .blog-item h2 a:hover {
+      color: #0a66c2;
+    }
+
+    .blog-meta {
+      font-size: 13px;
+      color: #777;
+      margin-bottom: 10px;
+    }
+
+    .meta-separator {
+      margin: 0 6px;
+    }
+
+    .blog-excerpt {
+      font-size: 15px;
+      color: #444;
+    }
   </style>
 </head>
 <body>
@@ -146,17 +246,42 @@
     <!-- Main Content -->
     <div class="content">
        <h1>Blog Posts</h1>
-	   <p>
-	   <p>
-	   <p><a href="blog/free-download-vmware.html">How To Download Vmware For Free</a></p>
-	   
+	 <div class="blog-list">
 
-	   
-	   
+  <article class="blog-item">
+    <h2>
+      <a href="blog/free-download-vmware.html">
+        How to Download VMware for Free
+      </a>
+    </h2>
+
+    <div class="blog-meta">
+      <span class="blog-date">January 15, 2026</span>
+      <span class="meta-separator">·</span>
+    </div>
+
+    <p class="blog-excerpt">
+      Step-by-step guide on downloading VMware Workstation Player legally and setting it up for home lab use.
+    </p>
+  </article>
+
+</div>
+
+</div>
   
    </div>
-  </div>
-</div>
+
+  <footer class="site-footer">
+  <div class="footer-content">
+    <p class="footer-meta">
+    © 2026 Hilary Jebit <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-URL" target="_blank">LinkedIn</a></p>
+    <p class="footer-tagline">Building infrastructure. Documenting the journey.</p>
+    </div>
+   </footer>
+
+</body>
+</html>
+
 </body>
 	
 </html>
